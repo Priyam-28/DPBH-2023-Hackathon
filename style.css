@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Oswald:wght@300&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    color: white;
+}
+body{
+    border-radius: 30px;
+   
+    width: 330px;
+     background: radial-gradient(rgb(0, 0, 0), #001C27); 
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.container1{
+    height:285px;
+}
+
+h1 {
+    /* font-family: 'Libre Bodoni', serif; */
+    font-family: 'Montserrat Alternates', sans-serif;
+
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 0px 1px rgb(180, 123, 123) ;
+    font-weight:light;
+    margin-bottom:10px;
+
+}
+
+img {
+    height: auto;
+    width: 100%;
+    border-collapse: 2px solid;
+    box-shadow: black 25px;
+    position: relative;
+    
+    
+}
+
+
+.slider-container {
+    display: inline-block;  
+    position: relative;
+}
+
+
+.slider {
+    margin-left: -40px;
+    height: 30px;
+    width: 70px;
+    /* margin-top: 220px; */
+   
+    border-radius: 15px;
+    position: absolute;
+    cursor: pointer;
+    border: 1.3px solid rgb(238, 244, 245);
+    transition: background-color 0.3s;
+    
+    
+}
+
+.slider:before {
+    content: "";
+    width: 28px;
+    height: 28px;
+    background-color: #f0f5f6;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+
+    transition: transform 0.3s;
+
+
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input:checked+.slider {
+    
+    background-color: springgreen;
+    border: 2px springgreen;
+    /* Green */
+}
+
+input:checked+.slider:before {
+    transform: translateX(42px);
+    
+
+}
+.container1{
+    height:186px;
+}
+#activateButton{
+    font-family: Tilt Neon;
+    margin-top: 40px;
+    color: #05DFEC;
+    background: #001C27;
+    border-radius: 5px;
+    height: 30px;
+    
+
+}
+#activateButton :hover{
+    background: #000;
+    color: #05E6F2;
+
+}
+#btn{
+    border:1px solid white;
+    border-radius: 6px;
+    color: #05DFEC;
+    background: #001C27;
+    height:auto;
+    transition: all linear 0.7s;
+    height: 30px;
+
+}
+
+a{
+    text-decoration: none;
+    font-family: Tilt Neon;
+}
+#hello{
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color:black;
+}
+button :hover{
+    background-color:rgb(29, 68, 93);
+    color: white;
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User-Friendly Popover</title>
+</head>
+<body>
+
+<div class="popover-container">
+  <button class="trigger-button">Hover me</button>
+</div>
+
+<script>
+  // JavaScript to create and style the popover dynamically
+  const popoverContainer = document.querySelector('.popover-container');
+  const triggerButton = document.querySelector('.trigger-button');
+
+  // Create popover content
+  const popoverContent = document.createElement('div');
+  popoverContent.classList.add('popover-content');
+  popoverContent.innerHTML = '<p>🚨 Caution: This website may use deceptive design to manipulate your actions. Be vigilant and review choices carefully for a fair user experience. If in doubt, consider navigating away.</p>';
+
+  // Append popover content to the container
+  popoverContainer.appendChild(popoverContent);
+
+  // Add styles using the style property
+  triggerButton.style.padding = '10px';
+  triggerButton.style.backgroundColor = '#3498db';
+  triggerButton.style.color = '#fff';
+  triggerButton.style.border = 'none';
+  triggerButton.style.cursor = 'pointer';
+
+  popoverContainer.style.position = 'relative';
+
+  popoverContent.style.display = 'none';
+  popoverContent.style.position = 'absolute';
+  popoverContent.style.backgroundColor = '#fff';
+  popoverContent.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.2)';
+  popoverContent.style.padding = '15px';
+  popoverContent.style.borderRadius = '5px';
+  popoverContent.style.zIndex = '1';
+  popoverContent.style.width = '250px';
+  popoverContent.style.top = '100%';
+  popoverContent.style.left = '50%';
+  popoverContent.style.transform = 'translateX(-50%)';
+  popoverContent.style.marginTop = '10px';
+  popoverContent.style.color = '#333';
+
+  // Show the popover content on hover
+  popoverContainer.addEventListener('mouseover', function() {
+    popoverContent.style.display = 'block';
+  });
+
+  // Hide the popover content when not hovering
+  popoverContainer.addEventListener('mouseout', function() {
+    popoverContent.style.display = 'none';
+  });
+</script>
+
+</body>
+</html>

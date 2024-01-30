@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Dark Pattern Buster",
+  "version": "1.0",
+  "browser_action": {
+    "default_title": "Dark Pattens highlighter",
+    "default_popup": "popup.html",
+    "default_icon": "icon128.png"
+  },
+  
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "http://*/*",
+    "https://*/*",
+    "file:///*"
+  ],
+  "web_accessible_resources": [
+    "dataset.txt",
+    "popup.html",
+    "highlighter.js"
+  ]
+}
